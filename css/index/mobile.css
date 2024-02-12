@@ -1,0 +1,66 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: #016316;
+}
+w section {
+  position: relative;
+}
+.saiba {
+  position: relative;
+}
+.container {
+  position: relative;
+  right: 87px;
+  bottom: 50px;
+}
+nav#desk {
+  display: none;
+}
+nav#mobile {
+  position: relative;
+  top: 670px;
+  left: 13px;
+  display: block;
+}
+
+#Gmobile {
+  display: block;
+  position: relative;
+  left: 140px;
+  bottom: 70px;
+}
+#Gmobile:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+#Gmobile p {
+  position: relative;
+  left: 100px;
+  bottom: 70px;
+}
+#Gdesk {
+  display: none;
+}
+#pg1 {
+  position: relative;
+  font-size: 18px;
+  top: 20px;
+}
+#pg2 {
+  position: relative;
+  font-size: 18px;
+  top: 40px;
+}
+#pg3 {
+  position: relative;
+  font-size: 18px;
+  top: 60px;
+}
+#pg4 {
+  position: relative;
+  font-size: 18px;
+  top: 80px;
+}

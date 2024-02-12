@@ -1,0 +1,82 @@
+@keyframes carregar_sec {
+  from {
+    transform: translateX(-1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #016316;
+}
+
+nav#desk {
+  display: hidden;
+  position: relative;
+}
+nav#mobile {
+  position: relative;
+  top: 670px;
+  left: 100px;
+  display: block;
+}
+img {
+  height: 130px;
+}
+.conhe {
+  position: relative;
+  right: 20px;
+}
+section#mobile {
+  display: block;
+  position: relative;
+  animation-name: carregar_sec;
+  animation-duration: 1s;
+  height: 700px;
+}
+section#desk {
+  display: none;
+}
+#tec1 {
+  position: relative;
+  bottom: 10px;
+}
+#tec2 {
+  position: relative;
+  bottom: 150px;
+}
+#tec3 {
+  position: relative;
+  bottom: 300px;
+  height: 30px;
+}
+
+#pg1 {
+  position: relative;
+  font-size: 18px;
+  top: 235px;
+}
+#pg2 {
+  position: relative;
+  font-size: 18px;
+  top: 265px;
+}
+#pg3 {
+  position: relative;
+  font-size: 18px;
+  top: 285px;
+}
+#pg4 {
+  position: relative;
+  font-size: 18px;
+  top: 315px;
+}
+footer {
+  position: relative;
+  top: 400px;
+}

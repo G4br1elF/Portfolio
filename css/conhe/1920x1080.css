@@ -1,0 +1,99 @@
+body {
+  background-color: #016316;
+  overflow-x: hidden;
+  font-family: "Audiowide", sans-serif;
+}
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes carregar_nav {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes carregar_sec {
+  from {
+    transform: translateX(-1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+/* BARRA DE OPÇÕES */
+nav#mobile {
+  display: none;
+}
+nav#desk {
+  position: relative;
+  bottom: 60px;
+  display: flex;
+  animation-name: carregar_nav;
+  animation-duration: 1s;
+}
+.nav_right {
+  position: relative;
+  left: 900px;
+  display: flex;
+  gap: 35px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(26, 25, 25);
+}
+a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+
+/* MEIO DA PAGINA */
+section#mobile {
+  display: none;
+}
+section#desk {
+  position: relative;
+  left: 130px;
+  top: 100px;
+  display: flex;
+  gap: 180px;
+  animation-name: carregar_sec;
+  animation-duration: 1s;
+}
+.conhe {
+  height: 400px;
+  width: 400px;
+  font-size: 20px;
+  text-align: center;
+  animation: flutuar 5s ease-in-out infinite;
+}
+p {
+  color: #001305;
+}
+#conhe {
+  text-shadow: 1px 3px 2px #299641;
+}
+/* ///////////////////////////////////////////////////////////// */
+
+/* RODAPÉ */
+footer {
+  position: relative;
+  top: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ///////////////////////////////////////////////////////////// */

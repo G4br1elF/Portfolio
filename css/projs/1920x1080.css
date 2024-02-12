@@ -1,0 +1,134 @@
+body {
+  background-color: #016316;
+  overflow-x: hidden;
+  font-family: "Audiowide", sans-serif;
+}
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes carregar_nav {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes left_slide {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes right_slide {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/* BARRA DE OPÇÕES */
+#logo {
+  position: relative;
+  left: 70px;
+  top: 30px;
+}
+nav#mobile {
+  display: none;
+}
+nav#desk {
+  position: relative;
+  bottom: 60px;
+  display: flex;
+  animation-name: carregar_nav;
+  animation-duration: 1s;
+}
+.nav_right {
+  position: relative;
+  left: 900px;
+  display: flex;
+  gap: 35px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(26, 25, 25);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+#proj {
+  text-shadow: 1px 3px 2px #299641;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+/* MEIO DA PAGINA */
+section {
+  font-size: 20px;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  justify-content: center;
+}
+.linha1 {
+  gap: 40px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  left: 170px;
+  text-align: center;
+  animation-direction: alternate;
+  animation-name: right_slide;
+  animation-duration: 1s;
+}
+.linha2 {
+  gap: 40px;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  left: 170px;
+  text-align: center;
+  animation-direction: alternate;
+  animation-name: left_slide;
+  animation-duration: 1s;
+}
+
+.projs {
+  position: relative;
+  left: 50px;
+  border: solid black 10px;
+  border-radius: 5px;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+footer {
+  position: relative;
+  top: 50px;
+  margin: auto;
+  text-align: center;
+}

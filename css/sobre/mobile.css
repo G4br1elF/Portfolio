@@ -1,0 +1,62 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #016316;
+}
+
+nav#desk {
+  display: hidden;
+}
+nav#mobile {
+  position: relative;
+  top: 670px;
+  left: 13px;
+  display: block;
+}
+section#mobile {
+  z-index: 0;
+  height: 400px;
+  display: flex;
+  font-size: 17px;
+  align-items: center;
+  border: solid black;
+  color: #001305;
+  background-color: #004610;
+  border-radius: 5px;
+  width: 320px;
+  height: 300px;
+  margin: auto;
+  animation-name: carregar_sec;
+  animation-duration: 1s;
+}
+.texto {
+  text-align: center;
+}
+section#desk {
+  display: none;
+}
+#pg1 {
+  position: relative;
+  font-size: 18px;
+  bottom: 160px;
+}
+#pg2 {
+  position: relative;
+  font-size: 18px;
+  bottom: 140px;
+}
+#pg3 {
+  position: relative;
+  font-size: 18px;
+  bottom: 120px;
+}
+#pg4 {
+  position: relative;
+  font-size: 18px;
+  bottom: 100px;
+}
+footer {
+  top: 300px;
+}
